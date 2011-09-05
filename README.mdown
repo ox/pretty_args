@@ -1,0 +1,19 @@
+# Pretty Args #
+
+Pretty Args is the pretty way to show off your usage dialog. It is perfect for small projects that have a few program arguments. However, pretty_args is powerful enough to handle large argument numbers and descriptions. It's also really simple to set up, give it a whirl.
+
+## Usage ##
+```ruby
+require 'pretty_args'
+
+#make a collection of arguments
+ac = ArgCollection.new
+
+#add a few arguments
+ac.add '[options]', 'something about x'
+ac.add '<file>', 'the file name'
+
+#draw them to the screen
+puts "program usage:"
+ac.draw
+```
