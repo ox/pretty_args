@@ -2,6 +2,10 @@
 
 Pretty Args is the pretty way to show off your usage dialog. It is perfect for small projects that have a few program arguments. However, pretty_args is powerful enough to handle large argument numbers and descriptions. It's also really simple to set up, give it a whirl.
 
+## Installation ##
+
+`gem install pretty_args`
+
 ## Usage ##
 ```ruby
 require 'pretty_args'
