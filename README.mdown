@@ -17,3 +17,45 @@ ac.add '<file>', 'the file name'
 puts "program usage:"
 ac.draw
 ```
+
+This prints out the following:
+
+```
+program usage:
+[options]   <file>
+    ┬         ┬
+    │         │
+    │         └────── the file name
+    └──────────────── something about x
+```
+
+Isn't that just pretty? Now go use it.
+
+### Alternate Usage ###
+
+```ruby
+require 'pretty_args'
+
+#make the arguments individually
+ar1 = Arg.new 'label', 'description'
+ar2 = Arg.new '[options]', 'options for x'
+
+#and add them on initialization
+ac = ArgCollection.new ar1, ar2
+
+#or individually
+ac = ArgCollection.new
+ac.add_arg ar1
+ac.add_arg ar2
+
+#or as an Array
+ac = ArgCollection.new
+ac.add_args [ar1,ar2]
+
+#then draw
+ac.draw
+```
+
+## License ##
+
+I really don't care for licenses, so use it as you will. However let me know where you use it, just for fun.
