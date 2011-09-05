@@ -1,4 +1,4 @@
-spec = GemSpecification.new do |s|
+Gem::Specification.new do |s|
   s.name = "pretty_args"
   s.summary = "make your programs arguments pretty to read and understand with a branching diagram"
 
