@@ -56,6 +56,42 @@ ac.add_args [ar1,ar2]
 ac.draw
 ```
 
+### Super Large Descriptions ###
+
+If you feel so inclined as to have large descriptions for your arguments, that's fine too. Here is a sample output. Nothing has changed about creating the arguments, just the length of the description string.
+
+```
+foo   baz   fiz52s   [options]   lol   bat   [options]   [flags]
+ ┬     ┬      ┬         ┬        ┬     ┬        ┬          ┬
+ │     │      │         │        │     │        │          │
+ │     │      │         │        │     │        │          └─────── this is a really long description that wi
+ │     │      │         │        │     │        │                   ll most likely break my application. This
+ │     │      │         │        │     │        │                    is to test if the program correctly hand
+ │     │      │         │        │     │        │                   les really long input strings and parses
+ │     │      │         │        │     │        │                   them the right way.
+ │     │      │         │        │     │        └────────────────── this is a really long description that wi
+ │     │      │         │        │     │                            ll most likely break my application. This
+ │     │      │         │        │     │                             is to test if the program correctly hand
+ │     │      │         │        │     │                            les really long input strings and parses
+ │     │      │         │        │     │                            them the right way. For instance, the pro
+ │     │      │         │        │     │                            gram should make another set of bars for
+ │     │      │         │        │     │                            every new line that comes from this text.
+ │     │      │         │        │     │                             I think this is long enough.
+ │     │      │         │        │     └─────────────────────────── mobile
+ │     │      │         │        └───────────────────────────────── cats
+ │     │      │         └────────────────────────────────────────── this is a really long description that wi
+ │     │      │                                                     ll most likely break my application. This
+ │     │      │                                                      is to test if the program correctly hand
+ │     │      │                                                     les really long input strings and parses
+ │     │      │                                                     them the right way. For instance, the pro
+ │     │      │                                                     gram should make another set of bars for
+ │     │      │                                                     every new line that comes from this text.
+ │     │      │                                                      I think this is long enough.
+ │     │      └──────────────────────────────────────────────────── bizz
+ │     └─────────────────────────────────────────────────────────── buz
+ └───────────────────────────────────────────────────────────────── bar
+ ```
+
 ## License ##
 
 I really don't care for licenses, so use it as you will. However let me know where you use it, just for fun.
